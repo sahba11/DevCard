@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\DevCard_Mvc.props" />
+</Project>
