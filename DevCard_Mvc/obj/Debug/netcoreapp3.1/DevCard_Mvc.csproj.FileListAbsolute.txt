@@ -114,3 +114,5 @@ C:\Users\Saba\source\repos\DevCard\DevCard_Mvc\obj\Debug\netcoreapp3.1\DevCard_M
 C:\Users\Saba\source\repos\DevCard\DevCard_Mvc\obj\Debug\netcoreapp3.1\DevCard_Mvc.pdb
 C:\Users\Saba\source\repos\DevCard\DevCard_Mvc\obj\Debug\netcoreapp3.1\DevCard_Mvc.genruntimeconfig.cache
 C:\Users\Saba\source\repos\DevCard\DevCard_Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\LatestArticles\_LatestArticles.cshtml.g.cs
+C:\Users\Saba\source\repos\DevCard\DevCard_Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Header.cshtml.g.cs
+C:\Users\Saba\source\repos\DevCard\DevCard_Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Shared\footer.cshtml.g.cs
