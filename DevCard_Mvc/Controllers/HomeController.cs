@@ -48,6 +48,7 @@ namespace DevCard_Mvc.Controllers
         [HttpPost]
         public IActionResult Contact(Contact model)
         {
+            model.Services = new SelectList(_services, "Id", "Name");
             //if(!ModelState.IsValid==false)
 	            if (!ModelState.IsValid)
 	            {
@@ -55,10 +56,13 @@ namespace DevCard_Mvc.Controllers
 		            return View(model);
 	            }
             // return RedirectToAction("Index");
+           ModelState.Clear();
             model = new Contact()
             {
 	            Services = new SelectList(_services, "Id", "Name")
 			};
+           
+            
             ViewBag.success = "پیغام شما با موفقیت ارسال شد با تشکر";
             return View(model);
         }
