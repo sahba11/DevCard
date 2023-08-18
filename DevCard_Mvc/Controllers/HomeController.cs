@@ -5,10 +5,16 @@ using Microsoft.Extensions.Logging;
 using System.Diagnostics;
 using Microsoft.AspNetCore.Http;
 using System.Collections.Generic;
+using DevCard_Mvc.Data;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace DevCard_Mvc.Controllers
 {
+    
+   // [Route("/inventory/products")]
+   // [Route("/inventory/products/{action}")]
+    //localhost:5001/inventory/products/index
+    //localhost:5001/inventory/products/contact
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -26,11 +32,23 @@ namespace DevCard_Mvc.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        //[Route("MyIndex/{name?}/{model?}")]
+        // localhost:5001/inventory/products/MyIndex
+        public IActionResult Index( string name,string model)
         {
+            
             return View();
         }
-        [HttpGet]
+
+        public IActionResult ProjectDetails(long id)
+        {
+            var project = ProjectStore.GetProjectBy(id);
+            return View(project);
+        }
+
+        //[HttpGet("ContactPage")]
+       // [Route("ContactPage")]
+       //localhost:5001/inventory/products/ContactPage
         public IActionResult Contact()
         {
             var model = new Contact();

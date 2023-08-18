@@ -8,4 +8,19 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\assets\NewFolder\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets\images\img\Capture.PNG" />
+    <None Include="wwwroot\assets\images\img\IMG-2137.jpg" />
+    <None Include="wwwroot\assets\images\img\IMG_1304.jpg" />
+    <None Include="wwwroot\assets\images\img\me.PNG" />
+    <None Include="wwwroot\assets\images\img\new.PNG" />
+    <None Include="wwwroot\assets\images\img\Unknown.pdf" />
+    <None Include="wwwroot\assets\images\img\unnamed.jpg" />
+    <None Include="wwwroot\assets\images\img\_BMF5795.jpg" />
+  </ItemGroup>
+
 </Project>
